@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_customer_requirement,access_customer_requirement,model_customer_requirement,base.group_user,1,1,1,1
+access_customer_requirement_category,access_customer_requirement_category,model_customer_requirement_category,base.group_user,1,1,1,1
+access_customer_requirement_detail,access_customer_requirement_detail,model_customer_requirement_detail,base.group_user,1,1,1,1

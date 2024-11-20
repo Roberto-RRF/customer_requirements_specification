@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- CATEGORIAS DE REQUERIMIENTO -->
+        <record id="customer_requirement_category_produccion" model="customer.requirement.category">
+            <field name="name">Produccion</field>
+        </record>
+        <record id="customer_requirement_category_embarques" model="customer.requirement.category">
+            <field name="name">Embarques</field>
+        </record>
+        <record id="customer_requirement_category_ventas" model="customer.requirement.category">
+            <field name="name">Ventas</field>
+        </record>
+
+
+
+        <!-- REQUERIMIENTOS -> Embarques -->
+
+        <record id="customer_requirement_embarques_1" model="customer.requirement">
+            <field name="name">¿Requiere algún tipo de unidad de entrega especial?</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_2" model="customer.requirement">
+            <field name="name">¿Requiere ayudante para la entrega?</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_3" model="customer.requirement">
+            <field name="name">¿Requiere rampa hidráulica en el camión para la entrega?</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_4" model="customer.requirement">
+            <field name="name">¿Requiere maniobra de descarga? (chofer entregue material dentro de las instalaciones)</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_5" model="customer.requirement">
+            <field name="name">¿La descarga se realiza en la calle?</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_6" model="customer.requirement">
+            <field name="name">¿Recibe cajas de tráiler?</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_7" model="customer.requirement">
+            <field name="name">¿Tiene horarios específicos para la recepción de materiales?</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_8" model="customer.requirement">
+            <field name="name">¿Necesita cita para recibo?</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_9" model="customer.requirement">
+            <field name="name">¿Tiene días específicos para la recepción de materiales?</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_10" model="customer.requirement">
+            <field name="name">Entregar con orden de compra (O.C.)</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_11" model="customer.requirement">
+            <field name="name">Entregar con factura.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_12" model="customer.requirement">
+            <field name="name">Entregar con certificado de calidad.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_13" model="customer.requirement">
+            <field name="name">¿Se requiere una sola remisión y factura por pedido?</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_14" model="customer.requirement">
+            <field name="name">Empalmar paquetes de material distinto en una misma tarima.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_15" model="customer.requirement">
+            <field name="name">Revisión de humedad de rollos y hojas (Corte / Línea).</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_16" model="customer.requirement">
+            <field name="name">Material cubierto con papel, humedad no mayor a X%.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_17" model="customer.requirement">
+            <field name="name">Material de cartulina y caple según lo indicado en la ficha técnica.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_18" model="customer.requirement">
+            <field name="name">Avisar al vendedor si se supera el nivel de humedad para autorización del cliente.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_19" model="customer.requirement">
+            <field name="name">Personal debe presentarse con equipo de protección personal.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_embarques_20" model="customer.requirement">
+            <field name="name">Altura en la tarima.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+         <record id="customer_requirement_embarques_21" model="customer.requirement">
+            <field name="name">Entregar con Fichas Técnicas.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>       
+         <record id="customer_requirement_embarques_22" model="customer.requirement">
+            <field name="name">Marcar Fin e Inicio de Rollo en Tarima.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_embarques'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+
+        <!-- REQUERIMIENTOS -> Produccion -->
+
+
+        <record id="customer_requirement_produccion_1" model="customer.requirement">
+            <field name="name">Tipo de tarima a utilizar: Barrote o tacón.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_2" model="customer.requirement">
+            <field name="name">Tarimas con esquineros (Sí / No).</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_3" model="customer.requirement">
+            <field name="name">Tarima en doble fila.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_4" model="customer.requirement">
+            <field name="name">Altura de la tarima.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_5" model="customer.requirement">
+            <field name="name">Tarima a la medida.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_6" model="customer.requirement">
+            <field name="name">Empalmar paquetes de material distinto en una sola tarima.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_7" model="customer.requirement">
+            <field name="name">Material a entregar: A granel o en paquetes.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_8" model="customer.requirement">
+            <field name="name">Cantidad por tarima.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_9" model="customer.requirement">
+            <field name="name">Cantidad de hojas por separadores.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_10" model="customer.requirement">
+            <field name="name">Entrega en rodados o moneda.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_11" model="customer.requirement">
+            <field name="name">Hojas empacadas.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_12" model="customer.requirement">
+            <field name="name">Lleva esquineros.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_13" model="customer.requirement">
+            <field name="name">Fecha de recolección del material (cliente).</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_14" model="customer.requirement">
+            <field name="name">Fecha de entrega del material.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_15" model="customer.requirement">
+            <field name="name">Refile (Sí / No) y medida.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_16" model="customer.requirement">
+            <field name="name">Material para laminar.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_17" model="customer.requirement">
+            <field name="name">Revisión de humedad de rollos y hojas (Corte / Línea).</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_20" model="customer.requirement">
+            <field name="name">Medir humedad del rollo antes de cortarlo.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_21" model="customer.requirement">
+            <field name="name">Avisar al vendedor si se supera el nivel de humedad para autorización del cliente.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_22" model="customer.requirement">
+            <field name="name">Utilización de procedimiento de embalaje Código: MX-PIT-0010 (Producción).</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_23" model="customer.requirement">
+            <field name="name">Embalaje estilo México: Fleje en cruz, esquineros de cartón kraft, protección en la base, libre de plagas.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_24" model="customer.requirement">
+            <field name="name">Bobina empacada en Kraft (Sí / No).</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_25" model="customer.requirement">
+            <field name="name">Bobina con tres vueltas de playo (Sí / No).</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>                                                                                              
+        <record id="customer_requirement_produccion_10" model="customer.requirement">
+            <field name="name">Entrega en rodados o moneda.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_11" model="customer.requirement">
+            <field name="name">Hojas empacadas.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_12" model="customer.requirement">
+            <field name="name">Lleva esquineros.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_13" model="customer.requirement">
+            <field name="name">Fecha de recolección del material (cliente).</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_14" model="customer.requirement">
+            <field name="name">Fecha de entrega del material.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_15" model="customer.requirement">
+            <field name="name">Refile (Sí / No) y medida.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_16" model="customer.requirement">
+            <field name="name">Material para laminar.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_17" model="customer.requirement">
+            <field name="name">Revisión de humedad de rollos y hojas (Corte / Línea).</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_20" model="customer.requirement">
+            <field name="name">Medir humedad del rollo antes de cortarlo.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_21" model="customer.requirement">
+            <field name="name">Avisar al vendedor si se supera el nivel de humedad para autorización del cliente.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_22" model="customer.requirement">
+            <field name="name">Utilización de procedimiento de embalaje Código: MX-PIT-0010 (Producción).</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_23" model="customer.requirement">
+            <field name="name">Embalaje estilo México: Fleje en cruz, esquineros de cartón kraft, protección en la base, libre de plagas.</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_24" model="customer.requirement">
+            <field name="name">Bobina empacada en Kraft (Sí / No).</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+        <record id="customer_requirement_produccion_25" model="customer.requirement">
+            <field name="name">Bobina con tres vueltas de playo (Sí / No).</field>
+            <field name="predefined_category_ids" eval="[Command.set([ref('customer_requirement_category_produccion'), ref('customer_requirement_category_ventas')])]"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,8 @@
+<odoo>
+    <menuitem 
+        id="menu_customer_requirements_configurations" 
+        name="Requerimientos Cliente" 
+        parent="contacts.res_partner_menu_config" 
+        sequence="10"
+    />
+</odoo>

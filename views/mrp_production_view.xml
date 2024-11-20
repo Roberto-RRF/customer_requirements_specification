@@ -1,0 +1,28 @@
+<odoo>
+    <record id="view_mrp_production_form_inherit" model="ir.ui.view">
+        <field name="name">mrp.production.form.inherit</field>
+        <field name="model">mrp.production</field>
+        <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Requerimientos">
+                    <field name="customer_requirement_ids">
+                        <tree editable="bottom">
+                            <field name="requirement_id" />
+                            <field name="category_ids" widget="many2many_tags"/>
+                            <field name="description"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+
+            <xpath expr="//button[@name='action_cancel']" position="after">
+                <button 
+                    name="generate_specification_report"
+                    type="object"
+                    string="Imprimir Hoja de Especificaciones"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>
