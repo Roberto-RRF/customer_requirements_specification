@@ -25,5 +25,4 @@ class StockPicking(models.Model):
                 'question':line.requirement_id.name,
                 'comments':line.description
             })
-        print(data)
         return self.env.ref('customer_requirements_specification.action_specification_report').report_action([], data=data)
