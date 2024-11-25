@@ -17,6 +17,8 @@ class MrpProduction(models.Model):
                     ('category_ids.name', '=', 'Produccion')
                 ])
                 production.customer_requirement_ids = requirements
+            else: 
+                production.customer_requirement_ids = False
 
     def generate_specification_report(self):
         data = {'lines':[]}
